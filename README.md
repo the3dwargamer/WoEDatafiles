@@ -1,7 +1,7 @@
 # WoEDatafiles
 Warlords of Erehwon BS Data Files
 
-If the file contains the words "working copy" it is a BETA version.
+These are currently a work in progress and are 'ALPHA' Versions.
 
 Known Bug List:
 
@@ -12,3 +12,7 @@ Knights=
 -Priest Hair shirt upgrade, fix needed
 -Add magic items
 -Ballista Light armour upgrade, has 2 point extra cost, fix selection add.
+
+Beastmen=
+-Add spells and magic items
+
