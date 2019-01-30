@@ -100,9 +100,30 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="ad3c-fc35-4ea7-7a70" name="Monster Unit" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="c061-a0f2-e7d4-a23b" name="Beast Unit" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
+    <categoryEntry id="239f-4e2f-785f-7869" name="Chariot Unit" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="481f-8147-f8a5-0760" name="Knights" hidden="false">
+    <forceEntry id="7ea6-a6ef-2ab9-ec1b" name="Army" hidden="false">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -110,58 +131,75 @@
       <constraints/>
       <forceEntries/>
       <categoryLinks>
-        <categoryLink id="21ee-5c58-80e7-a0b6" name="Artillery Unit" hidden="false" targetId="art unit" primary="false">
+        <categoryLink id="06f0-93d4-d3c4-a03d" name="Artillery Unit" hidden="false" targetId="art unit" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="488c-9ad1-e366-6a3f" name="Mounted Unit" hidden="false" targetId="mounted unit" primary="false">
+        <categoryLink id="f988-c59e-eec7-a431" name="Hero Unit" hidden="false" targetId="hero unit" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="7e93-8a6a-7035-e2c2" name="Warlord" hidden="false" targetId="warlord unit" primary="false">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b5-da25-3943-3a00" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="d71a-0a1b-6cfa-6e03" name="Warrior Command Unit" hidden="false" targetId="warrior command unit" primary="false">
+        <categoryLink id="16a6-13ed-e58a-d87b" name="Monster Unit" hidden="false" targetId="ad3c-fc35-4ea7-7a70" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="89f7-5690-cb68-3f12" name="Warrior Unit" hidden="false" targetId="warrior unit" primary="false">
+        <categoryLink id="c583-1bda-65ed-c25b" name="Mounted Unit" hidden="false" targetId="mounted unit" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="7e1f-4107-14fe-862f" name="Wizard" hidden="false" targetId="wizard unit" primary="false">
+        <categoryLink id="fabd-e448-8941-5fb8" name="Warlord" hidden="false" targetId="warlord unit" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
           <constraints/>
         </categoryLink>
-        <categoryLink id="14d1-d504-b4db-8a29" name="Hero Unit" hidden="false" targetId="hero unit" primary="false">
+        <categoryLink id="68d2-f26f-eac1-939e" name="Warrior Command Unit" hidden="false" targetId="warrior command unit" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="178a-9024-c45f-411b" type="max"/>
-          </constraints>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="fd87-e498-2d11-8b17" name="Warrior Unit" hidden="false" targetId="warrior unit" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="afeb-1bfb-1ee3-0b97" name="Wizard" hidden="false" targetId="wizard unit" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="97d2-94c2-cc61-c58d" name="Beast Unit" hidden="false" targetId="c061-a0f2-e7d4-a23b" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="9eef-ba48-1046-0bf3" name="Chariot Unit" hidden="false" targetId="239f-4e2f-785f-7869" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -654,6 +692,56 @@
       <description>
 -Friendly un-pinned units within 5&quot; can follow the unit&apos;s order immediately.</description>
     </rule>
+    <rule id="1c49-276e-425d-0999" name="Frenzied Charge" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
++1 Extra Attack when charging.</description>
+    </rule>
+    <rule id="c3b6-8870-61d6-7aaf" name="Savage" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Re-Roll STR to hit in first round of combat in game.</description>
+    </rule>
+    <rule id="86b2-7051-4b5c-d149" name="Irresistible Charge" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+D3 SV bonus when charging.</description>
+    </rule>
+    <rule id="e291-560d-f0fb-5572" name="Rapid Sprint" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+-Sprint at 4M</description>
+    </rule>
+    <rule id="1d07-520b-6918-03fd" name="Flies" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+-Move over any terrain/obstacle without test or penalty.
+-Enemy cannot charge/countercharge or follow-on in combat unless they can also fly, or if flyers are down.</description>
+    </rule>
+    <rule id="5e63-c99b-00b4-24eb" name="Vengeful" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+-If unit wins the first round of close combat then it MUST elect to fight a follow on combat where it can do so.
+-In follow-on combat, vengeful troops always fight with double their attacks.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2447-8f38-dd07-d089" name="Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
@@ -974,6 +1062,66 @@
       <characteristics>
         <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="1"/>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="Armour +1 Max bonus."/>
+      </characteristics>
+    </profile>
+    <profile id="a1ad-5715-ceb1-e77e" name="axe" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="1"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="+1 Strength"/>
+      </characteristics>
+    </profile>
+    <profile id="41c3-e1df-53b7-ed79" name="Huge Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="2"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="e977-49ab-1207-d301" name="Big Axe" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="2"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="8aea-0ac0-030a-5da1" name="Improbably Vast Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="3"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="-Heavily Laden"/>
+      </characteristics>
+    </profile>
+    <profile id="91a1-fed7-8323-b2c8" name="Bloomin&apos; big axe" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="3"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="-Heavily Laden"/>
+      </characteristics>
+    </profile>
+    <profile id="0b17-24e8-fb18-654e" name="Clubs" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="0"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="-"/>
       </characteristics>
     </profile>
   </sharedProfiles>
