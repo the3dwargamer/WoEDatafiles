@@ -742,6 +742,101 @@ D3 SV bonus when charging.</description>
 -If unit wins the first round of close combat then it MUST elect to fight a follow on combat where it can do so.
 -In follow-on combat, vengeful troops always fight with double their attacks.</description>
     </rule>
+    <rule id="e5df-1d6a-1034-7c77" name="Undead" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+-Cannot be routed.
+-Auto Resist choking attacks.
+-Immune to Dread
+-Immune to Terror</description>
+    </rule>
+    <rule id="fd2c-3cba-cafa-62aa" name="Zombie Master" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+-Can use Hero/Follow/Command rules for Zombie units.</description>
+    </rule>
+    <rule id="3dfb-f407-ff46-9b1f" name="Spectral Undead" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+-In addition to Undead rule, also hits from flaming attacks are ignored (auto-resisted) and inflict no pins.
+-All difficult ground/obstacles count as open terrain for movement.</description>
+    </rule>
+    <rule id="c738-3360-de3b-34a9" name="Deathly Chill" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+-No armour bonus allowed.</description>
+    </rule>
+    <rule id="0bf9-a070-b56b-ca4e" name="Dread" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+(-1) to hit shooting/close combat.
+(-1) to break test if defeated by Dreraded enemy.</description>
+    </rule>
+    <rule id="612a-20b6-14a2-97e4" name="Zombie" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+A failed order test is an advance order and not down.  
+Cannot sprint.
+Cannot benefit from the Hero/Follow/Command unless character is Zombie Master.</description>
+    </rule>
+    <rule id="4d2b-eef9-9776-1480" name="Slow" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Move at the basic rate indicated.</description>
+    </rule>
+    <rule id="c246-93aa-3909-26ee" name="Fast" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Move at the basic rate indicated.</description>
+    </rule>
+    <rule id="79ff-cb92-cea8-886f" name="Howling Horror Ammunition" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Target suffers D3 additional pins.</description>
+    </rule>
+    <rule id="a8bf-f48c-1b08-58e6" name="Unstoppable" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Shot penetrates the unit hit and can strike others beyond so long as the target is hit each time.</description>
+    </rule>
+    <rule id="6650-1e8e-9f7d-d242" name="Undead Army Special Rule" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+In an UNDEAD army, if your warlord is slain, then no further pins are removed from your units. Orders can still be issued as normal.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2447-8f38-dd07-d089" name="Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
@@ -784,7 +879,7 @@ D3 SV bonus when charging.</description>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5"/>
       </characteristics>
     </profile>
-    <profile id="096c-a0fe-df46-77c4" name="Warhammers" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
+    <profile id="096c-a0fe-df46-77c4" name="Warhammer" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -804,7 +899,7 @@ D3 SV bonus when charging.</description>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="+1 Str"/>
       </characteristics>
     </profile>
-    <profile id="c79a-48d1-9b48-2c68" name="Spears" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
+    <profile id="c79a-48d1-9b48-2c68" name="Spear" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1064,7 +1159,7 @@ D3 SV bonus when charging.</description>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="Armour +1 Max bonus."/>
       </characteristics>
     </profile>
-    <profile id="a1ad-5715-ceb1-e77e" name="axe" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+    <profile id="a1ad-5715-ceb1-e77e" name="Axe" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1114,7 +1209,7 @@ D3 SV bonus when charging.</description>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="-Heavily Laden"/>
       </characteristics>
     </profile>
-    <profile id="0b17-24e8-fb18-654e" name="Clubs" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+    <profile id="0b17-24e8-fb18-654e" name="Club" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1122,6 +1217,29 @@ D3 SV bonus when charging.</description>
       <characteristics>
         <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="0"/>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="7723-e7c2-30a5-43ee" name="Chariot Scythes" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="1"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="D6 SV1 Impact hits on charge"/>
+      </characteristics>
+    </profile>
+    <profile id="f54b-ae0e-9cdc-020e" name="Rock dropped by Carrion Beast" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="-"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="3"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Drop SV3"/>
       </characteristics>
     </profile>
   </sharedProfiles>
