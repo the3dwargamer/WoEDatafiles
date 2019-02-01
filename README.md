@@ -2,6 +2,8 @@
 Warlords of Erehwon BS Data Files
 
 These are currently a work in progress and are 'ALPHA' Versions.
+Please let me know of any bugs you find or add them to this readme.
+
 
 Known Bug List:
 
@@ -16,3 +18,5 @@ Knights=
 Beastmen=
 -Add spells and magic items
 
+Undead=
+-Add spells and magic items
