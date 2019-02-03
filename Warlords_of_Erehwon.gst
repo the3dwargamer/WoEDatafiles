@@ -121,6 +121,13 @@
       <modifiers/>
       <constraints/>
     </categoryEntry>
+    <categoryEntry id="8efa-298b-b165-ef8b" name="Montrosity Unit" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7ea6-a6ef-2ab9-ec1b" name="Army" hidden="false">
@@ -143,7 +150,9 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ecf-f4bf-8bcc-a04b" type="max"/>
+          </constraints>
         </categoryLink>
         <categoryLink id="16a6-13ed-e58a-d87b" name="Monster Unit" hidden="false" targetId="ad3c-fc35-4ea7-7a70" primary="false">
           <profiles/>
@@ -195,6 +204,13 @@
           <constraints/>
         </categoryLink>
         <categoryLink id="9eef-ba48-1046-0bf3" name="Chariot Unit" hidden="false" targetId="239f-4e2f-785f-7869" primary="false">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+        </categoryLink>
+        <categoryLink id="6a40-5161-bb63-34cd" name="Montrosity Unit" hidden="false" targetId="8efa-298b-b165-ef8b" primary="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -837,6 +853,57 @@ Shot penetrates the unit hit and can strike others beyond so long as the target 
       <description>
 In an UNDEAD army, if your warlord is slain, then no further pins are removed from your units. Orders can still be issued as normal.</description>
     </rule>
+    <rule id="0056-a41e-408e-1673" name="Disciplined" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Lose all pins when pass a rally test.</description>
+    </rule>
+    <rule id="93f9-d132-d71b-ab39" name="Shieldwall" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+In shieldwall formation cannot sprint and suffer -1 AG and INIT.
+-1 to hit ranged and HTH.</description>
+    </rule>
+    <rule id="0b0f-1de6-7017-9097" name="Berserk" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Until defeated or fail a break test, double attacks in HTH,
+Automatically pass orders to charge.</description>
+    </rule>
+    <rule id="5da1-1bfa-9b8d-6b82" name="MOD2" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Unit has 2 Order Dice.</description>
+    </rule>
+    <rule id="1e90-54e2-dd77-c4e3" name="Rapid Sprint" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Sprint at 4M</description>
+    </rule>
+    <rule id="45b3-c028-8c8c-43ae" name="Stampede" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Stampede on failed order test of 10. D10&quot;+2M in direction shown by dice.
+Each unit in path is attacked as if charged. unit goes down and gains 1 pin per unit trampled.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2447-8f38-dd07-d089" name="Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
@@ -1240,6 +1307,29 @@ In an UNDEAD army, if your warlord is slain, then no further pins are removed fr
         <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
         <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="3"/>
         <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Drop SV3"/>
+      </characteristics>
+    </profile>
+    <profile id="d7ff-de60-8b37-fbb7" name="Javelin" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="-"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="1"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="-"/>
+      </characteristics>
+    </profile>
+    <profile id="88d0-6821-ceff-0382" name="Rocks (HTH)" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="0"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="Can also be thrown as ranged weapon"/>
       </characteristics>
     </profile>
   </sharedProfiles>
