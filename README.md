@@ -17,9 +17,11 @@ Knights=
 -Priest Hair shirt upgrade, fix needed
 -Add magic items
 -Ballista Light armour upgrade, has 2 point extra cost, fix selection add.
+-Add profile to Lord
 
 Beastmen=
 -Add spells and magic items
+-Fix Centaur Lord options and upgrades
 
 Undead=
 -Add spells and magic items
