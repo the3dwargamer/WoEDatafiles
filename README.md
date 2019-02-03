@@ -19,9 +19,13 @@ Knights=
 -Ballista Light armour upgrade, has 2 point extra cost, fix selection add.
 -Add profile to Lord
 
+Olympians=
+-Greek seer number of spells
+
 Beastmen=
 -Add spells and magic items
 -Fix Centaur Lord options and upgrades
+
 
 Undead=
 -Add spells and magic items
