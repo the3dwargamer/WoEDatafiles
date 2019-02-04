@@ -31,4 +31,5 @@ Undead=
 -Add spells and magic items
 
 Barbarian=
+-Fix savage upgrade on barbarian horsemen
 
