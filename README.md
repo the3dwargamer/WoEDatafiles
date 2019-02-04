@@ -8,7 +8,7 @@ Please let me know of any bugs you find or add them to this readme.
 Known Bug/issue List:
 
 Game system=
-Come up with better method for armour upgrades (needs to change profile on sheet instead of just adding text of new armour res value)
+Update units with armour upgrades to have two profiles, therefore changing profile printout to reflect proper res value.  (copy barbarian list method)
 
 Knights=
 -Mangonel Sword Price
@@ -29,3 +29,6 @@ Beastmen=
 
 Undead=
 -Add spells and magic items
+
+Barbarian=
+
