@@ -25,6 +25,7 @@ Olympians=
 Beastmen=
 -Add spells and magic items
 -Fix Centaur Lord options and upgrades
+-Add spells placeholder to shaman
 
 
 Undead=
