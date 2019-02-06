@@ -98,7 +98,9 @@
       <rules/>
       <infoLinks/>
       <modifiers/>
-      <constraints/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39c8-2edc-5461-fe0e" type="max"/>
+      </constraints>
     </categoryEntry>
     <categoryEntry id="ad3c-fc35-4ea7-7a70" name="Monster Unit" hidden="false">
       <profiles/>
@@ -904,6 +906,54 @@ Sprint at 4M</description>
 Stampede on failed order test of 10. D10&quot;+2M in direction shown by dice.
 Each unit in path is attacked as if charged. unit goes down and gains 1 pin per unit trampled.</description>
     </rule>
+    <rule id="2b40-80c8-12cf-8f44" name="Crazed Psychotics" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Automatically pass charge orders, cannot be routed, immune to fear and terror.</description>
+    </rule>
+    <rule id="8eba-5940-fd9b-254c" name="Drop" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Drop attacks ignore cover modifiers.</description>
+    </rule>
+    <rule id="b61d-3471-1ce6-6878" name="Fire" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Fire attacks add an extra pin to targets they hit.</description>
+    </rule>
+    <rule id="57f2-e9b1-c3c1-7c74" name="Mechanical Genius" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Add +1 ACC of all artillery in 10&quot;, +/-1 from any Monstrosity (machine) damage chart result within 10&quot;</description>
+    </rule>
+    <rule id="182e-9b37-17f3-5b45" name="Ramshackle Contraption" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+On a failed order result of a 10 roll on the Monstrosity damage chart.</description>
+    </rule>
+    <rule id="4440-376a-8093-35b8" name="Stubborn" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Recover +1 pin each time an order test is taken.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2447-8f38-dd07-d089" name="Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
@@ -1330,6 +1380,97 @@ Each unit in path is attacked as if charged. unit goes down and gains 1 pin per 
       <characteristics>
         <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="0"/>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="Can also be thrown as ranged weapon"/>
+      </characteristics>
+    </profile>
+    <profile id="c6ac-d307-29c2-4ef1" name="Handgun" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="10-20&quot;"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="3"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Fire order to shoot"/>
+      </characteristics>
+    </profile>
+    <profile id="241a-1266-fce9-2638" name="Small Cannon" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="10-30&quot;"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="30-40&quot;"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="5"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Fire order to shoot, Unstoppable"/>
+      </characteristics>
+    </profile>
+    <profile id="a248-4b9b-1f06-2c5f" name="Large Cannon" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="10-50&quot;"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="50-100&quot;"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="8"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Fire order to shoot, Unstoppable"/>
+      </characteristics>
+    </profile>
+    <profile id="fc55-3266-2aa3-9d8a" name="Fire Cannon" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="10-30&quot;"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="30-40&quot;"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="5"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Fire order to shoot, Fire attacks, D6 hits"/>
+      </characteristics>
+    </profile>
+    <profile id="83bd-49e2-6f9b-a638" name="Bombard" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="10-20&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="20-30&quot;"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="30-40&quot;"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="3"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Overhead, Fire order to shoot, D4 hits"/>
+      </characteristics>
+    </profile>
+    <profile id="8a33-4972-aa2d-d058" name="Bomb" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="-"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="4"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="3x Drop SV4, Fire"/>
+      </characteristics>
+    </profile>
+    <profile id="fa92-51ea-e2be-fc20" name="Bouncing Bomb" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-20&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="-"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="6"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="1xDrop SV6 Fire, Unstoppable"/>
       </characteristics>
     </profile>
   </sharedProfiles>
