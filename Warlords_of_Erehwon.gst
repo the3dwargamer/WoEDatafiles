@@ -954,6 +954,38 @@ On a failed order result of a 10 roll on the Monstrosity damage chart.</descript
       <description>
 Recover +1 pin each time an order test is taken.</description>
     </rule>
+    <rule id="4808-d708-bb73-97e8" name="Enchanted Steed" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+All water terrain counts as open terrain and adds +1 RES to mounted units.</description>
+    </rule>
+    <rule id="6a8d-ef1b-6f78-e15c" name="Haughty Disdain" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Automatically pass first Break Test.</description>
+    </rule>
+    <rule id="e1f3-7817-0e4e-5cb9" name="Woodsman" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Difficult Terrain counts as open terrain.</description>
+    </rule>
+    <rule id="dcb2-de55-1fca-e0a8" name="Stealthy" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Re-roll missile hits if in cover.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2447-8f38-dd07-d089" name="Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
@@ -1026,7 +1058,7 @@ Recover +1 pin each time an order test is taken.</description>
         <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="Can also be thrown during exchange of missiles."/>
       </characteristics>
     </profile>
-    <profile id="8c77-0a0d-0097-c499" name="Long Spears" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
+    <profile id="8c77-0a0d-0097-c499" name="Long Spear" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
       <profiles/>
       <rules/>
       <infoLinks/>
@@ -1471,6 +1503,34 @@ Recover +1 pin each time an order test is taken.</description>
         <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
         <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="6"/>
         <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="1xDrop SV6 Fire, Unstoppable"/>
+      </characteristics>
+    </profile>
+    <profile id="c44d-adb8-ec8a-3dd4" name="Rock dropped by Eagle" hidden="false" profileTypeId="2c2c-0dd3-c341-b2ef" profileTypeName="Weapon profile Ranged">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Range Short" characteristicTypeId="388b-c232-987e-c292" value="0-10&quot;"/>
+        <characteristic name="Range Long" characteristicTypeId="93c3-2707-51ef-b304" value="-"/>
+        <characteristic name="Range Extreme" characteristicTypeId="49d3-642a-08be-5817" value="-"/>
+        <characteristic name="Strike Value" characteristicTypeId="47c7-dced-6203-6b76" value="3"/>
+        <characteristic name="Special Rules" characteristicTypeId="83b9-69ea-35a1-5148" value="Drop SV3"/>
+      </characteristics>
+    </profile>
+    <profile id="50ea-80df-79dd-7d1e" name="Horse" hidden="false" profileTypeId="2f17-7b0c-7f4e-2baf" profileTypeName="Humanoid model">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Ag" characteristicTypeId="b787-94dd-0cef-abb7" value="-"/>
+        <characteristic name="Acc" characteristicTypeId="efac-8fd0-5d23-7d69" value="-"/>
+        <characteristic name="Str" characteristicTypeId="fcb5-8bd5-6767-fa61" value="-"/>
+        <characteristic name="Res" characteristicTypeId="d916-9ec8-dd33-7873" value="-"/>
+        <characteristic name="Init" characteristicTypeId="7313-a059-134c-8199" value="-"/>
+        <characteristic name="Co" characteristicTypeId="a7e4-65ad-5a57-90bb" value="-"/>
+        <characteristic name="Special" characteristicTypeId="68b3-e6ca-5920-ff4e" value="-"/>
       </characteristics>
     </profile>
   </sharedProfiles>
