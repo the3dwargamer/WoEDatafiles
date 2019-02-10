@@ -1533,5 +1533,15 @@ Re-roll missile hits if in cover.</description>
         <characteristic name="Special" characteristicTypeId="68b3-e6ca-5920-ff4e" value="-"/>
       </characteristics>
     </profile>
+    <profile id="3848-b5eb-4efb-796f" name="Flail" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="Weapon Profile HTH">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Strike Value" characteristicTypeId="1b55-d6e6-1944-708a" value="1"/>
+        <characteristic name="Special Rules" characteristicTypeId="dad6-5d39-6880-25a5" value="Armour +1 Max Bonus"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>
