@@ -986,6 +986,73 @@ Difficult Terrain counts as open terrain.</description>
       <description>
 Re-roll missile hits if in cover.</description>
     </rule>
+    <rule id="9855-31c9-3745-714d" name="Baleful Glare" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Ranged Attack 20&quot;, No damage but inflicts 1+D3 pins and unit takes a Break test.</description>
+    </rule>
+    <rule id="53b9-a3e9-0e9f-2d77" name="Venomous" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Add one hit if any hits are scored.</description>
+    </rule>
+    <rule id="37e8-d658-01a9-6916" name="Flaming Breath" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Ranged Attack 20&quot;. Fire Attack. As Stats.</description>
+    </rule>
+    <rule id="087e-dfda-76c2-09bf" name="Blundering" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Cannot Sprint. Must test Agility for a run. Crosses obstacles as chariot/artillery.</description>
+    </rule>
+    <rule id="0a0c-ed4c-9647-4398" name="Regenerate" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Re-roll failed RES and take pin if successful.</description>
+    </rule>
+    <rule id="14ff-225a-4ec5-f56d" name="Beastly Breath" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+D6 Ranged attacks, 20&quot;. SV3 Choking</description>
+    </rule>
+    <rule id="46d2-d008-8225-bcff" name="Chunder" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+Ranged Attack 10&quot;, Opponent&apos;s RES 5.  Chunder goes empty on a roll of 6+</description>
+    </rule>
+    <rule id="583a-fa53-11ff-7b40" name="Terror" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>
+A unit within 15&quot; removes NO pins when making an order test. 
+A unit failing a break test within 5&quot; is automatically destroyed.
+A routing unit within 5&quot; is automatically destroyed.
+Terrifying units and units with the Crazed Psychotic/Undead rules are immune to terror.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2447-8f38-dd07-d089" name="Sword" hidden="false" profileTypeId="4e9d-173a-314b-a7c5" profileTypeName="HTH Weapon Profile">
